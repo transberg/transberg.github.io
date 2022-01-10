@@ -1,9 +1,10 @@
 void settings() {
-  noSmooth();
+  
   size(1920, 1080);
 }
 
 void setup() {
+	noSmooth();
 	size(1920, 1080);
 	initSim();
 }
