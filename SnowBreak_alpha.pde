@@ -1,8 +1,3 @@
-void settings() {
-  size(1920, 1080);
-  noSmooth();
-}
-
 void setup() {
 	size(1920, 1080);
 	initSim();
