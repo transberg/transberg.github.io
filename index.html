@@ -2,24 +2,8 @@
 <html>
 <body>
 
-test
-<canvas id="canvas" width="300" height="300"></canvas>
 <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
 <script src="script.js"></script>
-<script type="text/javascript">
-	window.requestAnimationFrame(draw);
-	function draw(){
-		var context = document.getElementById('canvas').getContext('2d');
-		context.globalCompositeOperation = 'destination-over';
-		context.clearRect(0, 0, 300, 300); // clear canvas
-		context.fillStyle = 'rgba(0, 0, 0, 0.4)';
-		context.strokeStyle = 'rgba(0, 153, 255, 0.4)';
-		context.save();
-		context.fillRect(0, -12, 40, 24); // Shadow
-		context.restore();
-		window.requestAnimationFrame(draw);
-	}
-</script>
 
 </body>
 </html>
