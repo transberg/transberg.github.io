@@ -1,10 +1,9 @@
-void settings() {
-  
+@Override void settings() {
   size(1920, 1080);
+  noSmooth();
 }
 
 void setup() {
-	noSmooth();
 	size(1920, 1080);
 	initSim();
 }
