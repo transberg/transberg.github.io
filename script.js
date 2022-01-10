@@ -1,10 +1,10 @@
 let grid;
 let cols;
 let rows;
-let resolution = 10;
+let resolution = 40;
 
 function setup(){
-	createCanvas(400, 400);
+	createCanvas(400, 400, WEBGL);
 	cols = width / resolution;
 	rows = height / resolution;
 	grid = make2DArray(cols, rows);
@@ -16,6 +16,7 @@ function setup(){
 }
 
 function draw(){
+	translate(-width/2, -height/2);
 	background(0);
 	updateGrid();
 	showGrid();
