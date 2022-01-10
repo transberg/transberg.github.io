@@ -5,6 +5,7 @@ void setup() {
 
 void draw() {
 noSmooth();
+initSim();
   showSim();
 }
 
