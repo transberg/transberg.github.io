@@ -4,15 +4,14 @@ void setup() {
 }
 
 void draw() {
-noSmooth();
-initSim();
-  showSim();
+	initSim();
+	showSim();
 }
 
 void showSim() {
-  image(sim, marginL, marginL, sim.width * simScaling, sim.height * simScaling);
+	image(sim, marginL, marginL, sim.width * simScaling, sim.height * simScaling);
 }
 
 int xywToI(int x, int y, int w) {
-  return y * w + x;
+	return y * w + x;
 }
