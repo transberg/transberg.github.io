@@ -1,7 +1,7 @@
 let grid;
 let cols;
 let rows;
-let resolution = 40;
+let resolution = 4;
 
 function setup(){
 	createCanvas(400, 400);
@@ -38,8 +38,9 @@ function updateGrid(){
 	let next = make2DArray(cols, rows);
 	for(let i = 1; i < cols - 1; i++){
 		for(let j = 1; j < rows - 1; j++){
-			let sum = 0;
-			for(let x = i - 1; i <= i + 1; x++){
+			
+			var sum = 0;
+			for(let x = i - 1; x <= i + 1; x++){
 				for(let y = j - 1; y <= j + 1; y++){
 					sum += grid[x][y];
 				}
