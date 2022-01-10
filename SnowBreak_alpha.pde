@@ -1,5 +1,5 @@
 void setup() {
-	fullScreen();
+	size(1600, 900);
 	initSim();
 }
 
