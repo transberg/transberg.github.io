@@ -4,6 +4,6 @@ function setup(){
 
 function draw(){
 	background(220);
-	ellipse(50,50,80,80);
+	ellipse(frameCount % 300,50,80,80);
 	
 }
