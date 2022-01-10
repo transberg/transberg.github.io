@@ -1,3 +1,5 @@
+let grid;
+
 function setup(){
 	createCanvas(400, 400);
 	grid = make2DArray(10,10);
