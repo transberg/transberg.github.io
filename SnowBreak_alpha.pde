@@ -4,7 +4,8 @@ void settings() {
 }
 
 void setup() {
-  initSim();
+	size(1920, 1080);
+	initSim();
 }
 
 void draw() {
